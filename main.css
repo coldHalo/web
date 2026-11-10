@@ -167,7 +167,7 @@ body {
     text-align: center;
     color: black;}
 
-#skills, #projects, #about-me, #brand, #education, #contact-me{
+#skills, #projects, #about-me, #brand, #education, #contact-me {
     width: 1800px;
     height: 1000px;
     border-radius: 15px;
@@ -220,10 +220,6 @@ body {
     transition: 0.3s;
     width: 200px;
     height: 445px;
-}
-
-#contact-me {
-
 }
 
 #contact-me-form {
