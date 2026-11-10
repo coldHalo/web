@@ -1,4 +1,156 @@
+:root {
+    --color1: rgba(250,250,250,0);
+    --color2: rgba(0,0,0,0)
+}
 
+
+.jetbrains-mono {
+                     font-family: "JetBrains Mono", monospace;
+                     font-optical-sizing: auto;
+                     font-weight: 200;
+                     font-style: normal;
+                 }
+
+body {
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(47, 98, 153, 1) 30%, rgba(44, 181, 199, 1) 67%, rgba(83, 88, 237, 1) 100%);
+}
+
+#header {
+    width: auto;
+    height: 100px;
+    color: black;
+    font-family: "Roboto Mono",sans-serif;
+    background-color: rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    will-change: transform;
+}
+
+#footer {
+    width: auto;
+    height: 100px;
+    color: black;
+    font-family: "Roboto Mono",sans-serif;
+    background-color: rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    will-change: transform;
+}
+
+#header-title {
+    align-items: center;
+    margin: auto;
+}
+
+#introduction-border {
+    width: 1700px;
+    height: 600px;
+    border-radius: 15px;
+    margin: auto;
+    align-items: center;
+    border-style: solid;
+    background-color: rgba(0,0,0,0.3);
+    border-color: black;
+}
+
+#introduction-content {
+    align-items: center;
+}
+
+#portfolio-button .button-text {
+    opacity: 0.5;
+    color: blue;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+#portfolio-button .button-text:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#portfolio-button {
+    padding: 12px 24px;
+    position: fixed;
+    right: 350px;
+    border: none;
+    background: none;
+    font-size: 25px;
+}
+
+#about-button {
+    padding: 12px 24px;
+    position: fixed;
+    right: 250px;
+    border: none;
+    background: none;
+    font-size: 25px;
+}
+
+#about-button .button-text {
+    opacity: 0.5;
+    color: blue;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+#about-button .button-text:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btngroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btngroup .button:hover {
+    background-color: darkblue;
+    opacity: 1;
+}
+
+.button {
+    opacity: 0.8;
+    background-color: #183aea;
+    color: white;
+    border: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.button-text {
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.intro-title {
+    font-family: "Jetbrains Mono",monospace;
+    font-size: 40px;
+    text-align: center;
+
+    color: black;
+    text-shadow:
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #ffffff,
+            1px 1px 0 #ffffff;
+    ;
+
+
+}
+
+
+.intro-name {
+    font-family: "Jetbrains Mono",monospace;
+    font-size: 40px;
+    text-align: center;
+
+    color: black;
     text-shadow:
             -1px -1px 0 #ffffff,
             1px -1px 0 #ffffff,
