@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <link rel="stylesheet" href="main.css">
+
 <script src="main.js"></script>
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
+
+<head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
+
 <body>
     <div id="header">
         <button onclick="scrolldiv('about-me')" id="about-button" type="submit">
@@ -18,12 +24,12 @@
     </div>
 
     <div id ="introduction-border">
-
         <div id="introduction-content">
             <h1 class="intro-title" >My name is...</h1>
             <h1 class="intro-name">Preston</h1>
             <h2 class="intro-slogan">Beginner Software Engineer</h2>
-            <h2 class="intro-slogan">Take a look at..</h2>
+            <h2 class="intro-slogan">Take a look at...</h2>
+
             <div class="btngroup">
                 <button onclick="scrolldiv('projects')" class="button">
                     <span class="button-text">My Projects</span>
@@ -34,20 +40,105 @@
                 <button onclick="scrolldiv('skills')" class="button">
                     <span class="button-text">Languages</span>
                 </button>
+                <button onclick="scrolldiv('education')" class ="button">
+                    <span class="button-text">Education</span>
+                </button>
+                <button onclick="scrolldiv('brand')" class ="button">
+                    <span class="button-text">Brand</span>
+                </button>
             </div>
         </div>
     </div>
 
     <div id="about-me">
-        <h1>h</h1>
+        <h1 class="section-title">About Me</h1>
+        <h2 class="section-text"></h2>
+
     </div>
 
     <div id="skills">
+        <h1 class="section-title">Skills</h1>
+        <h2 class="section-text">Programming Languages: </h2>
 
+        <div class="section-cards">
+            <div class="container">
+                <img src="assets/javascript.png" alt="JavaScript" class="images">
+                    <h2 class="section-text">JavaScript</h2>
+                    <p class="section-text">Intermediate Level, mainly used with website creation.</p>
+            </div>
+
+            <div class="container">
+                <img src="assets/c++.png" alt="C++" class="images">
+
+                <h2 class="section-text">C++</h2>
+                <p class="section-text">Intermediate Level, main language.</p>
+            </div>
+
+            <div class="container">
+                <img src="assets/csharp.webp" alt="C#" class="images">
+
+                <h2 class="section-text">C#</h2>
+                <p class="section-text">Beginner Level, not a lot of experience.</p>
+            </div>
+
+            <div class="container">
+                <img src="assets/python.png" alt="Python" class="images">
+
+                <h2 class="section-text">Python</h2>
+                <p class="section-text">Intermediate Level, my first language.</p>
+            </div>
+
+            <div class="container">
+                <img src="assets/asm.png" alt="Assembly" class="images">
+
+                <h2 class="section-text">Assembly</h2>
+                <p class="section-text">Beginner/ Intermediate level. </p>
+            </div>
+
+        </div>
     </div>
 
     <div id="projects">
+        <h1 class="section-title">Projects</h1>
+        <h2 class="section-text">Information</h2>
+    </div>
+
+    <div id="education">
+        <h1 class="section-title">Education</h1>
+        <h2 class="section-text">Information</h2>
+    </div>
+
+    <div id="brand">
+        <h1 class="section-title">My Brand</h1>
+        <h2 class="section-text">Information</h2>
+    </div>
+
+    <div id ="contact-me">
+        <h1 class="section-title">Contact Me</h1>
+        <h2 class="section-text">Want to reach out for more information or have any suggestions of projects or how to improve this website? Don't be afraid to reach out.</h2>
+        <div id="contact-me-form">
+            <form action="https://formsubmit.co/900305@student.derby-college.ac.uk" method="POST">
+                <label for="contact-me">Subject:
+                    <input type="text" class="form-input" required placeholder="Enter a subject...">
+                </label>
+                <label for="contact-me">Message:
+                    <input type="text" class="form-input" required placeholder="Enter a message...">
+                </label>
+                <label for="contact-me">Email Address:
+                    <input type="email" class="form-input" required placeholder="Enter an email address...">
+                </label>
+                <label for="contact-me">Name (optional):
+                    <input type="text" class="form-input" required placeholder="Enter a name...">
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="footer">
 
     </div>
+
 </body>
 </html>
