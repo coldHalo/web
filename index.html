@@ -2,6 +2,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <link rel="stylesheet" href="main.css">
 
+<title>PM Programming | coldHalo_</title>
+
 <script src="main.js"></script>
 
 <head>
@@ -117,19 +119,24 @@
         <h1 class="section-title">Contact Me</h1>
         <h2 class="section-text">Want to reach out for more information or have any suggestions of projects or how to improve this website? Don't be afraid to reach out.</h2>
         <div id="contact-me-form">
-            <form action="https://formsubmit.co/900305@student.derby-college.ac.uk" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="3cdb7c54-9b66-4132-98ec-058158915995">
                 <label for="contact-me">Subject:
-                    <input type="text" class="form-input" required placeholder="Enter a subject...">
+                    <input name="subject" type="text"  class="form-input" width="100%" height="100px" required placeholder="Enter a subject..." required>
                 </label>
+
                 <label for="contact-me">Message:
-                    <input type="text" class="form-input" required placeholder="Enter a message...">
+                    <textarea name="message" type="text" class="form-input" id="message" onresize="resizeOnMove()" required placeholder="Enter a message..." required></textarea>
                 </label>
+
                 <label for="contact-me">Email Address:
-                    <input type="email" class="form-input" required placeholder="Enter an email address...">
+                    <input name="email" type="email" class="form-input" width="100%" height="100px" required placeholder="Enter an email address..." required>
                 </label>
+
                 <label for="contact-me">Name (optional):
-                    <input type="text" class="form-input" required placeholder="Enter a name...">
+                    <input name="name" type="text" class="form-input" width="100%" height="100px" required placeholder="Enter a name..." required>
                 </label>
+
                 <button type="submit">Submit</button>
             </form>
         </div>
