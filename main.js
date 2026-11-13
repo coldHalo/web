@@ -3,7 +3,3 @@ function scrolldiv(ID = "") {
     thing
         .scrollIntoView({behavior: "smooth"});
 }
-
-function resizeOnMove() {
-    resizeTo(outerWidth = 20,outerHeight = 100);
-}
